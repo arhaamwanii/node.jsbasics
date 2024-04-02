@@ -93,3 +93,24 @@ EVENT LOOP
     - you don't need to do that as you can keep the server up 
     - 
 
+
+STREAMS AND BUFFERS
+    STREAMS
+    - data is not send in all together rather stream i.e it is sent in small chucks 
+    - we can start wroking on these chunks accourdingly
+    - you can't work on these chunks randomly
+        - so you need to orgainize them
+        BUFFER COMES INTO PLAY HERE
+
+
+
+    - stream : request is being sent in chunks
+        - so that we can start working on that
+        - so that we get the acess 
+
+
+parse the incomming request 
+
+ORDER OF EXECUTION ≠ ORDER OF WRITTING THE CODE
+
+
