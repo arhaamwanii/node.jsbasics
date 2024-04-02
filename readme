@@ -77,3 +77,19 @@ REQUIRE
     - if you don't put the ./ it will look for the gobal thing
 
 if x happens do why this snippet is used a lot in react
+
+takes  a request listner as an argument
+this argument will be executed for every time someone does an request
+    then this fucntion will recieve two aruments 
+        first one : will cotain data about the request
+        second one : will help to send the response
+
+EVENT LOOP
+    - core event lopp
+    - register once it is done
+    - it is always running, it keeps on listening until somecall back happens
+
+    - we need to close it intentionally : process.exit()
+    - you don't need to do that as you can keep the server up 
+    - 
+
