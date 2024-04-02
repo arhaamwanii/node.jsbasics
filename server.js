@@ -22,18 +22,14 @@ const server = http.createServer(( req , res) => {
             body.push(chunk);
         } )
         req.on('end' , () =>{
-           const parsedBody = Buffer.concat(body).toString();
-           console.log(parsedBody)
-           const message = parsedBody.split('=')[1];
-            fs.writeFileSync('message.txt' , message  )        
+            const parsedBody = Buffer.concat(body).toString();
+            console.log(parsedBody)
+            const message = parsedBody.split('=')[1];
+            fs.writeFileSync('message.txt' , message  )   
+            res.statusCode = 302
+            res.setHeader('Location' , '/')
+            return res.end()                 
         })
-        // fired every time a new chunk of data is recived
-        // first one is the data second one is the fuction you need to fire every time a chuck of data is recieved
-        // this is what we can work with
-
-        res.statusCode = 302
-        res.setHeader('Location' , '/')
-        return res.end()
     }
     res.setHeader('Content-Type' , 'text/html');
     res.write('<html>')
@@ -46,4 +42,9 @@ const server = http.createServer(( req , res) => {
 
 server.listen(3001)
 
-// setting up different pages for different things
+// how the web workers -> send : process : send back
+// event loop that we know -> that the code should be going on even after the function has been performed
+// asynchronus code -> there is a shit ton of async code 
+// requests and respose
+    // we have to parse the data
+    // streams and buffers
