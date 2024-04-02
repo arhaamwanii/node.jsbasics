@@ -1,0 +1,79 @@
+NODE.JS
+    - it is a js runtime
+    - js which is used to manupalte the page after it was loaded
+    - takes js and runs it on other places as well
+    - node.js uses v8 : v8 built by google to run on the js
+        - v8 compiles it to machine code 
+        - written in c++
+    - adds usefull fucntion to js but also takes away like the dom
+
+    "node js is a RUNTIME we can run it in a server, in a console, or anywhere, build processes for frameworks"
+
+require statement is used to import modules 
+
+    browser
+     -> page 
+     -> send a req 
+     -> server 
+     -> we take the rquest 
+     -> do something with the request 
+        -> create server
+        -> listen to incomming requests
+        -> connect to a data base for data
+        -> authenticate the user 
+        -> give permissions to the user 
+     -> may or maynot reuturn something
+        -> html 
+        -> json
+
+alternative:
+    python with frame works like flask or django
+    php
+    ruby on rails 
+    ASP.NET
+
+CONTENT ON THE COURCE
+    - refreshed
+    - basics
+    - effient development
+    - data bases  : my Sql
+    - node and noSql
+    - stripe.js 
+    - REST API
+    - websocket
+    - GraphQl
+
+
+How the web Works? 
+
+user/client(browser)
+-> domain
+-> domain look up
+-> request
+-> server
+-> resopnse (e.g HTML page)
+
+now these requests and responses are done in a particular way?
+HTTP and HTTPS
+    - hyper text transfer request
+    - hyper text transfer protocol secure
+        - with ssl encryption 
+        - i.e the text is encrypted so that no one can read it
+
+some functionalites are available with default
+   
+    CORE MODULES
+    http -> lauch a sever
+    https -> server with ssl
+    fs 
+    path
+    os
+
+
+REQUIRE
+    - it is just an alternative import export
+    - it takes in the path 
+    or
+    - if you don't put the ./ it will look for the gobal thing
+
+if x happens do why this snippet is used a lot in react
